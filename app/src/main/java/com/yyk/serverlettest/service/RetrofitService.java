@@ -16,7 +16,7 @@ import rx.Observable;
 
 public interface RetrofitService {
 
-    @POST("MyServerlet1")
+    @POST("LoginClServerlet")
     @FormUrlEncoded
     Observable<String> getAndroid(@FieldMap Map<String, Object> params);
 }

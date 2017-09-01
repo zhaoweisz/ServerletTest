@@ -40,7 +40,7 @@ public class RetrofitHelper {
         OkHttpClient okHttpClient = new OkHttpClient.Builder().addInterceptor(httpLoggingInterceptor).build();
         mRetrofit = new Retrofit.Builder()
                 .client(okHttpClient)
-                .baseUrl("http://50.1.62.171:8080/serverletProject/")
+                .baseUrl("http://192.168.1.102:8080/MyUserManager/")
                 //增加返回值为String的支持
                 .addConverterFactory(ScalarsConverterFactory.create())
                 //增加返回值为Gson的支持(以实体类返回)
